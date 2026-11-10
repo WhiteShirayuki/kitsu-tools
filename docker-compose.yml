@@ -38,7 +38,7 @@ services:
   mailcatcher:
     image: schickling/mailcatcher
   minio:
-    image: minio/minio:latest
+    image: pgsty/minio:latest
     command: [server, "--console-address", ":9001", "/data"]
     volumes:
       - ./uploads:/data
